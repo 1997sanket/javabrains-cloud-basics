@@ -1,0 +1,43 @@
+1. What is Cloud Computing?
+	- For non-programmers, we use it every day. For eg: Youtube. 
+		When you watch a Youtube video, you are acting as a client, but there are some server somewhere which is streaming
+		the video. The server is storing that video.
+	- For a programmer
+		It's basically when you write code but run it on some rented remote machine and you may not worry about specific
+		details about that hardware.
+
+
+2. The Mainframe model
+	- In the 1950s there used to be one BIG hardware. And users would share that hardware amongst themselves,
+		based on time and/or resources.
+	- Advantages of using this were obviously cost-effectiveness.
+	- But then personal computers came into the picture and suddenly everyone had their own "personal" computer.
+
+
+3. The On-premises model
+	- Companies had data centers, where they would have multiple servers, which they would maintain and configure themselves.
+	- They would "estimate" the maximum use case of their resources and thus buy the hardware accordingly because they could
+		not upscale whenever required.
+	- Then came VMs, which made things a little bit easy as One server can host multiple VMS and share resources. Thus, 
+			virtually up and downscaling resources between VMs that host servers.
+
+4. Some disadvantages of characteristics of on-prem model
+	- We need CI/CD for big applications so Monolith was no option.
+	- It was very difficult to predict scalability.
+	- RDBMS was an issue because entire data was on database server.
+	- In a modern distributed architecture, its not very convenient to "not" design for failure (CAP theorem).
+	- When we got a big application running on a server, the server becomes a "Unique Snowflake" and we need to do the exact 
+		same things if we want to replicate that runtime, which is very difficult.
+
+
+5. NIST cloud essential characteristics
+	- On-demand self-service.(immediate)
+	- Broad network access (services available on the internet, doesn't necessarily have to be public)
+	- Resource pooling (AWS may share resources between multiple users)
+	- Rapid elasticity
+	- Measured service(For how much time and how much resources is used)
+
+
+
+
+

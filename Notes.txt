@@ -29,15 +29,47 @@
 	- When we got a big application running on a server, the server becomes a "Unique Snowflake" and we need to do the exact 
 		same things if we want to replicate that runtime, which is very difficult.
 
+5. Scalability is the ability to increase resources on-demand as needed. Elasticity when we can go up and down on resources.
 
-5. NIST cloud essential characteristics
-	- On-demand self-service.(immediate)
-	- Broad network access (services available on the internet, doesn't necessarily have to be public)
-	- Resource pooling (AWS may share resources between multiple users)
-	- Rapid elasticity
-	- Measured service(For how much time and how much resources is used)
+6. CapEx = Capital Expenditure
+	- Expenditure require in setting up and maintaining on-prem data center.
+	- Usually cheaper for long-term
 
+7. OpEx = Operational Expenditure
+	- Expenditure required in renting cloud services.
+	- Cheaper to start.
 
+8. Public Cloud - available on the internet (AWS)
 
+9. Private Cloud - Kind of like mimicking AWS on-premises.
 
+10. Hybrid Cloud - Mixture of both. Usually happens when companies are migrating from on-prem to cloud.
 
+11. Economies of Scale - Architect needs to keep in mind the cost that will required if and when application needs scaling.
+
+12. Generic cloud service types:
+	a) Computer (VM)
+	b) Storage 
+	c) Network
+	d) Application (Elastic Bean Stalk)
+	e) Metrics/Analytics
+
+13. General deployment models
+	a) IAAS	-> Cloud will only provide you machines and basic OS, and security, you will do the whole thing.
+	b) PAAS	-> Cloud will provide you machines, elasticity, maintenance, etc. You will just write code and deploy.
+	c) SAAS	-> Cloud will write the code and maintain the software as well. You will just use the Software as a service. 
+				Eg: Gmail, Google drive, Google docs, etc.
+
+14. Regions
+	- Cloud providers have data centers in various regions around the world.
+	- Choosing regions is based on :
+		a) Latency (closest to users)
+		b) Services available in that region
+		c) Cost of using a service in that region.
+		d) Data compliance (US medical records should not be in a data center outside US)
+
+15. Availability zones
+	- One region can have multiple avaiability zones.
+	- Main reason is to be disaster ready.
+	- In case one AZ gets distroyed, other should not be ideally affected and thus we have copy of our application which
+		we can still run.
